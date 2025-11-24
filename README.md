@@ -77,6 +77,6 @@ Este projeto foi desenvolvido como parte de uma iniciativa de conscientização.
 
 Se você tiver sugestões de melhoria no conteúdo, no design ou na funcionalidade, sinta-se à vontade para abrir uma _issue_ ou enviar um _Pull Request_ no repositório.
 
-**Desenvolvedor Principal:** [Seu Nome ou Nome da Equipe]
+**Desenvolvedor Principal:** Otávio | Gabriel | Matheus | Luiz
 
 &copy; 2025 Projeto Segurança Digital: Conscientização e Cidadania. Todos os direitos reservados.
