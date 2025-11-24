@@ -1,7 +1,3 @@
-// ======================================================================
-// 1. ANIMAÇÃO DE SCROLL (FADE/SLIDE)
-// ======================================================================
-
 const sections = document.querySelectorAll("section");
 const observerOptions = {
   root: null,
@@ -13,7 +9,6 @@ const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
-      // observer.unobserve(entry.target); // Descomente para animar apenas uma vez
     }
   });
 }, observerOptions);
@@ -22,20 +17,15 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-// ======================================================================
-// 2. NAVEGAÇÃO MOBILE (MENU HAMBURGUER)
-// ======================================================================
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
-  // Adicionar classe para animação do ícone hamburguer, se implementada no CSS
+
   menuToggle.classList.toggle("open");
 });
 
-// Fechar menu ao clicar em um link (apenas em mobile)
 navLinks.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     if (window.innerWidth <= 768) {
@@ -45,24 +35,18 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// ======================================================================
-// 3. LÓGICA DO QUIZ
-// ======================================================================
-
 const quizForm = document.getElementById("quizForm");
 const quizResult = document.getElementById("quizResult");
 
 quizForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  // Função para obter valores das variáveis CSS para uso no JS
   const getCssVar = (varName) =>
     getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
 
-  // Define as cores CSS lidas do :root
   const accentColor = getCssVar("--color-accent");
   const dangerColor = getCssVar("--color-danger");
-  const orangeColor = "orange"; // Cor simples para nível médio
+  const orangeColor = "orange";
 
   const answers = {
     q1: "b",
