@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstração e Quiz - SECURE-EDU</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">SECURE-EDU</a>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#intro">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="leis_etica.html">Leis e Ética</a></li>
+            <li><a href="protecao.html">Proteção</a></li>
+            <li><a href="demonstracao.html">Demonstração</a></li>
+          </ul>
+          <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="demonstracao" class="visible">
+        <div class="container">
+          <h2>Demonstração Segura e Ética</h2>
+
+          <div class="alert-ethics">
+            <strong>Aviso de Ética e Consentimento:</strong> O objetivo desta
+            seção é <strong>puramente educativo</strong>. Todas as simulações
+            utilizam <strong>dados fictícios</strong>.
+          </div>
+
+          <p>
+            Nesta área, oferecemos uma visão prática de como as falhas de
+            segurança podem ser exploradas, para que você possa entender melhor
+            a importância das medidas de proteção.
+          </p>
+
+          <div class="demo-box">
+            <h3>Simulação Leve de Engenharia Social (Exemplo Interativo)</h3>
+            <p>
+              Veja o exemplo abaixo. Tente identificar o golpe de forma simples.
+            </p>
+            <div
+              style="
+                background-color: #121212;
+                border: 1px solid #333;
+                padding: 15px;
+                border-radius: 6px;
+                text-align: left;
+                max-width: 500px;
+                margin: 20px auto;
+              "
+            >
+              <p
+                style="
+                  color: var(--color-accent);
+                  font-weight: bold;
+                  margin-bottom: 5px;
+                "
+              >
+                [SUPORTE CLIENTE - 10:05]
+              </p>
+              <p>
+                Olá, identificamos uma tentativa de compra suspeita em seu
+                cartão. Para cancelar, clique no link e informe seus dados
+                (exemplo de golpe).
+              </p>
+              <p
+                style="
+                  text-align: right;
+                  margin-top: 10px;
+                  color: var(--color-text-secondary);
+                  font-style: italic;
+                "
+              >
+                (Lembre-se: Não clique se fosse real! Apenas um exemplo)
+              </p>
+            </div>
+            <p>
+              <strong>Dica:</strong> <strong>Nunca</strong> um suporte oficial
+              solicitará sua senha. Desconfie da urgência e do link estranho.
+            </p>
+
+            <div
+              class="quiz-container"
+              style="margin-top: var(--spacing-large)"
+            >
+              <h3>Teste Rápido de Segurança (Quiz)</h3>
+              <p>
+                Responda a estas 3 perguntas simples para avaliar seu nível de
+                atenção:
+              </p>
+              <form
+                id="quizForm"
+                style="text-align: left; max-width: 400px; margin: 0 auto"
+              >
+                <div style="margin-bottom: 15px">
+                  <p>
+                    <strong
+                      >1. Qual a melhor prática para uma senha forte?</strong
+                    >
+                  </p>
+                  <label style="display: block"
+                    ><input type="radio" name="q1" value="a" /> A. Usar o nome
+                    do meu filho.</label
+                  >
+                  <label style="display: block"
+                    ><input type="radio" name="q1" value="b" /> B. Uma frase
+                    longa (12+ caracteres) com símbolos.</label
+                  >
+                  <label style="display: block"
+                    ><input type="radio" name="q1" value="c" /> C. A palavra
+                    'senha123'.</label
+                  >
+                </div>
+                <div style="margin-bottom: 15px">
+                  <p><strong>2. O que é Engenharia Social?</strong></p>
+                  <label style="display: block"
+                    ><input type="radio" name="q2" value="a" /> A. Um novo tipo
+                    de vírus.</label
+                  >
+                  <label style="display: block"
+                    ><input type="radio" name="q2" value="b" /> B. A arte de
+                    manipular pessoas para obter informações
+                    confidenciais.</label
+                  >
+                  <label style="display: block"
+                    ><input type="radio" name="q2" value="c" /> C. Um aplicativo
+                    de chat seguro.</label
+                  >
+                </div>
+                <div style="margin-bottom: 15px">
+                  <p>
+                    <strong
+                      >3. Se seu celular está agindo estranho, o que fazer
+                      primeiro?</strong
+                    >
+                  </p>
+                  <label style="display: block"
+                    ><input type="radio" name="q3" value="a" /> A. Reiniciar e
+                    ignorar.</label
+                  >
+                  <label style="display: block"
+                    ><input type="radio" name="q3" value="b" /> B. Desconectar
+                    imediatamente da Internet.</label
+                  >
+                  <label style="display: block"
+                    ><input type="radio" name="q3" value="c" /> C. Postar sobre
+                    o problema nas redes sociais.</label
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="btn-primary"
+                  style="width: 100%; margin-top: 10px"
+                >
+                  Ver Resultados
+                </button>
+              </form>
+              <div
+                id="quizResult"
+                style="margin-top: 20px; font-weight: bold"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Projeto Segurança Digital: Conscientização e Cidadania.
+          Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
